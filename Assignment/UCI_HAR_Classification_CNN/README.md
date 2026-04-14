@@ -40,6 +40,7 @@ Residual 경로 : Conv, ReLU 등의 레이어를 통해 F(x)를 학습
 
 일반 CNN : y = F(x)
 Residual Block 기반의 ResNet 구조 : y = x+F(x)
+
 **본질적인 차이 : 일반 CNN은 전체 값을 새로 만드는 구조, Residual 구조는 기존 입력 값에 작은 변화량만 더하는 방식**
 
 ## 5. Residual 구조의 장점
