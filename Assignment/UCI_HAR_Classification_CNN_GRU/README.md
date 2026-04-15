@@ -23,18 +23,22 @@
 ## LSTM과 GRU 비교
 ### LSTM
 - 게이트 : 3개 (Forget, Input, Output)
-- 내부 상태 : 2개 (Cell, Hidden)
+- 이전 정보(벡터)를 기억하는 값 : 2개 (Cell, Hidden)
 
 특징 : 메모리를 두 층으로 관리
+	
 	- 정보 장기 의존성에 강함
+	
 	- 구조가 복잡하고 파라미터 수가 많음
 
 ### GRU
 - 게이트 : 2개 (Update, Reset)
-- 내부 상태 : 1개 (Hidden)
+- 이전 정보(벡터)를 기억하는 값 : 1개 (Hidden)
 
 특징 : 메모리를 하나로 통합
+	
 	- LSTM에 비해 정보 흐름이 하나이므로 구조가 단순함
+	
 	- 계산량과 파라미터 수가 적음
 
 이러한 특성을 정리하면 LSTM은 복잡하지만 표현력이 강하고 GRU는 단순하고 효율적이다.
@@ -45,11 +49,11 @@
 2. 파라미터 수가 적다.
 - GRU는 LSTM보다 게이트 수가 적어 연산에 필요한 가중치가 줄어들기 때문에 파리미터 수가 감소하여 학습 속도와 효율성이 높아진다.
 
-논문에서의 핵심 문장 : "GRU has a smaller number of parameters" (GRU는 더 적은 수의 파라미터를 가진다.)
+  논문에서의 핵심 문장 : "GRU has a smaller number of parameters" (GRU는 더 적은 수의 파라미터를 가진다.)
 3. 노이즈 처리
 - 센서 데이터는 노이즈가 많기 때문에 GRU는 Updata Gate로 이전 흐름과 비교하여 신뢰 가능한 정보만 반영할 수 있다.
 
-논문에서의 핵심 문장 : "GRU enables fault-tolerant capability" (GRU는 오류(노이즈)에 대해 견딜 수 있는 능력을 가진다.)
+  논문에서의 핵심 문장 : "GRU enables fault-tolerant capability" (GRU는 오류(노이즈)에 대해 견딜 수 있는 능력을 가진다.)
 
 ### CNN과 GRU 결합 이유
 CNN은 다양한 범위의 특징을 동시에 추출할 수 있지만 시간의 흐름을 반영하지 못하고 노이즈 데이터에 취약한 한계를 가지고 있다. 
