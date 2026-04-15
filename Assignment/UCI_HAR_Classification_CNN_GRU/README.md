@@ -1,4 +1,4 @@
-# 멀티채널 CNN-GRU 기반 HAR Dataset 분류
+# Multichannel CNN-GRU 기반 HAR Dataset 분류
 ## 참고 논문
 본 모델은 A Multichannel CNN-GRU Model for Human Activity Recognition의 제안 모델을 기반으로 구현하였다.
 
