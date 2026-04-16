@@ -1,6 +1,6 @@
 # DL_Classification_abalone
 ```
-precision    recall  f1-score   support
+           precision    recall  f1-score   support
 
            0       0.85      0.77      0.81       307
            1       0.79      0.90      0.84       478
