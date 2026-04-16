@@ -1,5 +1,6 @@
 # DL_Classification_abalone
-              precision    recall  f1-score   support
+```
+precision    recall  f1-score   support
 
            0       0.85      0.77      0.81       307
            1       0.79      0.90      0.84       478
@@ -11,7 +12,7 @@ weighted avg       0.80      0.81      0.80       836
 [[235  72   0]
  [ 40 429   9]
  [  0  39  12]]
- 
+```
 해당 분류 모델은 전체적으로 안정적이게 학습이 되었다.
 
 그러나 클래스별 상세 성능을 확인한 결과 Class2에 대한 precision과 recall 낮은 값으로 나와 해당 클래스를 제대로 분류하지 못하는 문제가 발생하였다.
