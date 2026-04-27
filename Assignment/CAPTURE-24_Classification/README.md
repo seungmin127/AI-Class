@@ -17,12 +17,11 @@
 
 ## 센서 데이터의 형태
 CAPTURE-24는 시계열 데이터이기 때문에 시간 순서가 중요.
-
-'''
+```
 time        x-axis      y-axis      z-axis
 
 t1          0.12        -0.83        0.54
-'''
+```
 - 100Hz로 해당 값을 1초에 100번 측정한다.
   
 모델 학습을 위해 10초 길이의 비중첩 window로 잘라서 사용.
@@ -153,13 +152,10 @@ CAPTURE-24는 현실적인 만큼 어려움
 -> 같은 walking 라벨이어도 센서 패턴은 다양
 
 ### 다른 활동이지만 센서 패턴이 비슷할 수 있음
-sitting vs vehicle
-
-sitting vs standing
-
-standing vs light household activity
-
-walking vs mixed-activity
+- sitting vs vehicle
+- sitting vs standing
+- standing vs light household activity
+- walking vs mixed-activity
 
 -> 손목 가속도만으로 문맥을 완벽히 파악할 수 없음
 
@@ -202,7 +198,7 @@ po = (대각선 합) / (전체 샘플 수)
 	 = 0.85
 '''
 pe 공식
-'''
+```
 step 1. GT/Pred 비율 구하기
 GT:
 A = 60/100 = 0.6
@@ -216,13 +212,13 @@ step 2. 곱해서 더하기
 pe = (0.6 × 0.55) + (0.4 × 0.45)
    = 0.33 + 0.18
    = 0.51
-'''
+```
 최종 공식
-'''
+```
 κ = (0.85 - 0.51) / (1 - 0.51)
   = 0.34 / 0.49
   ≈ 0.694
-'''
+```
 
 ### MCC(Matthews Correlation Coefficient)
 예측과 정답 간의 상관관계
