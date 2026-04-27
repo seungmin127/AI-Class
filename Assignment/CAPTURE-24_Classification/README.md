@@ -17,6 +17,7 @@
 
 ## 센서 데이터의 형태
 CAPTURE-24는 시계열 데이터이기 때문에 시간 순서가 중요.
+
 '''
 time        x-axis      y-axis      z-axis
 
